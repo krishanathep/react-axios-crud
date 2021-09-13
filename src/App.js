@@ -3,6 +3,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Photos from './components/Photos';
 import Navbar from './components/layouts/Navbar';
+import CreatePhoto from './components/CreatePhoto'
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/photos">
           <Photos/>
+        </Route>
+        <Route path="/createphoto">
+          <CreatePhoto/>
         </Route>
       </Switch>
     </Router>

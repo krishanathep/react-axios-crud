@@ -1,4 +1,5 @@
 import React, {useState,useEffect} from "react";
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const Photos = () => {
@@ -54,6 +55,9 @@ const Photos = () => {
               <h5 className="card-title">Photos List</h5>
             </div>
             <div className="card-body">
+            <div className="float-right mb-3">
+          <Link to="/createphoto" className='btn btn-success'>Create</Link>
+        </div>
               <table className="table table-bordered">
                 <thead>
                   <tr>
